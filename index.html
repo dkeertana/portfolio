@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Keertana | Computer Science Engineering Student & Builder</title>
+  <meta name="description" content="Portfolio of D Keertana — Computer Science Engineering student, builder, and learner focusing on Java, DSA, cloud computing, and software development.">
+  <meta name="keywords" content="Keertana D, Portfolio, Computer Science, Java, DSA, Software Developer, Engineering Student, Open Source">
+  <meta name="author" content="D Keertana">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="D Keertana | Building While Learning">
+  <meta property="og:description" content="Computer Science Engineering student, builder, and learner crafting resilient software.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Interactive Cursor Spotlight Canvas Effect -->
+  <div class="spotlight-overlay" id="spotlightOverlay"></div>
+  <div class="tech-grid-background"></div>
+
+  <!-- Notification Toast -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" aria-label="Keertana D Home">
+        <span class="brand-prefix">&gt;</span>
+        <span class="brand-text">keertana.d</span>
+        <span class="brand-cursor">_</span>
+      </a>
+
+      <!-- Status telemetry chip in nav -->
+      <div class="nav-status-pill">
+        <span class="status-pulse-dot"></span>
+        <span class="status-label">DEV_MODE: ACTIVE</span>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a></li>
+          <li><a href="#exploring" class="nav-link"><span class="nav-num">02.</span> Focus</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-num">03.</span> Projects</a></li>
+          <li><a href="#journey" class="nav-link"><span class="nav-num">04.</span> Journey</a></li>
+          <li><a href="#now" class="nav-link"><span class="nav-num">05.</span> Now</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn-terminal-trigger" id="copyEmailHeaderBtn" title="Copy Keertana's Email" aria-label="Copy Email">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>keertana.dev@outlook.com</span>
+        </button>
+        <a href="#contact" class="btn-connect">Connect</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link"><span class="nav-num">01.</span> About</a></li>
+        <li><a href="#exploring" class="mobile-nav-link"><span class="nav-num">02.</span> Focus Areas</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span class="nav-num">03.</span> Selected Projects</a></li>
+        <li><a href="#journey" class="mobile-nav-link"><span class="nav-num">04.</span> Learning Journey</a></li>
+        <li><a href="#now" class="mobile-nav-link"><span class="nav-num">05.</span> Currently (Now)</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span class="nav-num">06.</span> Connect</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <div class="telemetry-item">
+          <span class="dot-green"></span>
+          <span>Open to Software Engineering Internships</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Identity Meta Badge -->
+          <div class="identity-badge">
+            <span class="badge-terminal-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </span>
+            <span class="badge-text">STATUS: DEVELOPER IN PROGRESS</span>
+            <span class="badge-divider">/</span>
+            <span class="badge-sub">CSE '26</span>
+          </div>
+
+          <!-- Hero Name -->
+          <h1 class="hero-name">
+            <span class="name-prefix">Hello, I'm</span>
+            <span class="name-main">KEERTANA D.</span>
+          </h1>
+
+          <!-- Identity Tagline -->
+          <div class="hero-role-wrapper">
+            <p class="hero-role">
+              <span class="role-highlight">Computer Science Engineering Student</span>
+              <span class="role-separator">•</span>
+              <span class="role-pill">Builder</span>
+              <span class="role-separator">•</span>
+              <span class="role-pill">Learner</span>
+            </p>
+          </div>
+
+          <!-- Core Manifesto -->
+          <div class="hero-statement-container">
+            <h2 class="hero-core-message">Building while learning.</h2>
+            <p class="hero-description">
+              Approaching software development from first principles. Rather than relying on surface-level abstractions, I dive deep into algorithms, system design, and clean architecture — turning concepts into resilient, functional software through deliberate projects and problem solving.
+            </p>
+          </div>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroCtaProjects">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#journey" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>The Progression</span>
+            </a>
+
+            <div class="social-quick-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <button type="button" class="social-icon-btn copy-btn" id="heroCopyEmail" title="Copy Email" aria-label="Copy Email Address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Telemetry Visual Widget -->
+        <div class="hero-telemetry-panel">
+          <div class="panel-window-chrome">
+            <div class="window-dots">
+              <span class="dot dot-close"></span>
+              <span class="dot dot-minimize"></span>
+              <span class="dot dot-expand"></span>
+            </div>
+            <div class="window-title">keertana@workspace ~ telemetry.log</div>
+            <div class="window-badge">ACTIVE</div>
+          </div>
+
+          <div class="panel-body">
+            <div class="terminal-line"><span class="cmd-prompt">&gt;</span> <span class="cmd-text">system.inspect --profile "D_Keertana"</span></div>
+            
+            <div class="telemetry-spec-grid">
+              <div class="telemetry-cell">
+                <div class="telemetry-label">CURRENT_FOCUS</div>
+                <div class="telemetry-value text-accent">Java, OOP &amp; DSA Patterns</div>
+              </div>
+              <div class="telemetry-cell">
+                <div class="telemetry-label">ACADEMIC_TRACK</div>
+                <div class="telemetry-value">Computer Science &amp; Eng.</div>
+              </div>
+              <div class="telemetry-cell">
+                <div class="telemetry-label">ACTIVE_PROJECT</div>
+                <div class="telemetry-value">RFQ Compliance Engine</div>
+              </div>
+              <div class="telemetry-cell">
+                <div class="telemetry-label">NORTH_STAR</div>
+                <div class="telemetry-value">Open Source &amp; Scalable Systems</div>
+              </div>
+            </div>
+
+            <!-- Live Terminal Output Simulation -->
+            <div class="terminal-stream">
+              <div class="stream-line">
+                <span class="stream-timestamp">[12:58:13]</span>
+                <span class="stream-tag tag-ok">OK</span>
+                <span class="stream-msg">Algorithms: Mastering Graph Traversal &amp; DP</span>
+              </div>
+              <div class="stream-line">
+                <span class="stream-timestamp">[12:58:14]</span>
+                <span class="stream-tag tag-info">INFO</span>
+                <span class="stream-msg">RFQ Engine: Spec discrepancy matcher v0.8.2</span>
+              </div>
+              <div class="stream-line">
+                <span class="stream-timestamp">[12:58:15]</span>
+                <span class="stream-tag tag-progress">BUILD</span>
+                <span class="stream-msg">Compiling mental models: Systems &gt; Syntax</span>
+              </div>
+            </div>
+
+            <!-- Mini Progress Ticker -->
+            <div class="telemetry-footer-bar">
+              <div class="ticker-label">
+                <span>PROGRESSION INDEX</span>
+                <span class="text-accent" id="liveTickerText">Iterating Daily</span>
+              </div>
+              <div class="ticker-track">
+                <div class="ticker-fill" style="width: 76%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: About -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">01 //</span> ABOUT THE BUILDER</span>
+          <h2 class="section-title">An engineer in training, driven by curiosity.</h2>
+          <p class="section-subtitle">
+            Not claiming ten years of seasoned mastery, but possessing the relentless drive to unpack complex systems, understand how they break, and write software that lasts.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <div class="narrative-card">
+              <h3 class="narrative-heading">Learning by Shipping, Not Spectating</h3>
+              <p>
+                I am a Computer Science Engineering student focused on building robust computational foundations. My approach to technology centers on active construction: reading standard documentation, designing test cases before writing code, and learning how memory, runtimes, and networks interact under the hood.
+              </p>
+              <p>
+                From dissecting memory allocation in C++ to structuring scalable object hierarchies in Java, I believe engineering confidence comes from tackling real constraints. Whether it's building a technical compliance evaluator or optimizing query plans for a multi-table database, I strive for clean architecture and thoughtful edge-case handling.
+              </p>
+
+              <div class="quote-box">
+                <div class="quote-mark">“</div>
+                <div class="quote-text">
+                  The goal isn’t to write the most code, but to solve problems with clarity, intentional structure, and minimal accidental complexity.
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-num">01</div>
+                <h4 class="pillar-title">First Principles</h4>
+                <p class="pillar-desc">Understanding the underlying computer science rather than memorizing superficial framework patterns.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-num">02</div>
+                <h4 class="pillar-title">Algorithmic Rigor</h4>
+                <p class="pillar-desc">Daily problem solving to build intuitive pattern recognition for optimal time and space trade-offs.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-num">03</div>
+                <h4 class="pillar-title">Clean Engineering</h4>
+                <p class="pillar-desc">Writing readable, modular, and self-documenting code that is easy to reason about and maintain.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-num">04</div>
+                <h4 class="pillar-title">Open Ecosystem</h4>
+                <p class="pillar-desc">Striving toward open source contributions by reading real-world codebases and contributing back.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Technical Telemetry Card -->
+          <div class="about-specs-sidebar">
+            <div class="spec-card">
+              <div class="spec-card-header">
+                <div class="spec-card-title">DEVELOPER PROFILE</div>
+                <span class="spec-chip">ID: KD_2026</span>
+              </div>
+              <ul class="spec-list">
+                <li class="spec-row">
+                  <span class="spec-key">Name:</span>
+                  <span class="spec-val">D Keertana</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Role:</span>
+                  <span class="spec-val">CSE Student &amp; Aspiring SDE</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Academic Focus:</span>
+                  <span class="spec-val">Computer Science &amp; Engineering</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Primary Stack:</span>
+                  <span class="spec-val text-accent">Java, C/C++, SQL, Web</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Current Trajectory:</span>
+                  <span class="spec-val">Backend &amp; Distributed Systems</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Core Strengths:</span>
+                  <span class="spec-val">DSA, Analytical Reasoning, System Logic</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-key">Availability:</span>
+                  <span class="spec-val text-highlight">
+                    <span class="dot-green"></span> Open for SDE Internships
+                  </span>
+                </li>
+              </ul>
+
+              <!-- Terminal snippet -->
+              <div class="card-terminal-box">
+                <div class="terminal-bar">
+                  <span>philosophy.json</span>
+                </div>
+                <pre><code>{
+  "mode": "continual_improvement",
+  "build_while_learning": true,
+  "fear_of_failure": false,
+  "daily_leetcode_streak": "Active",
+  "open_source_curiosity": "High"
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Currently Exploring -->
+    <section class="section exploring-section" id="exploring">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">02 //</span> TECHNICAL HORIZONS</span>
+          <h2 class="section-title">Currently Exploring</h2>
+          <p class="section-subtitle">
+            Areas where I am actively investing study hours, building small prototypes, and strengthening conceptual depth.
+          </p>
+        </div>
+
+        <div class="exploring-grid">
+          <!-- Area 1: Java -->
+          <article class="explore-card">
+            <div class="explore-card-top">
+              <div class="explore-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="explore-stage-badge stage-deepening">DEEPENING</span>
+            </div>
+            <div class="explore-meta">AREA 01 // OBJECT-ORIENTED SYSTEMS</div>
+            <h3 class="explore-title">Java &amp; OOP Architecture</h3>
+            <p class="explore-desc">
+              Moving past syntax into enterprise-grade paradigms: multithreading, concurrency utilities, Collections framework internals, Stream API, and SOLID architectural patterns.
+            </p>
+            <div class="explore-topics">
+              <span class="topic-chip">Multithreading</span>
+              <span class="topic-chip">Generics</span>
+              <span class="topic-chip">JVM Internals</span>
+              <span class="topic-chip">Design Patterns</span>
+              <span class="topic-chip">Spring Framework</span>
+            </div>
+            <div class="explore-current-focus">
+              <span class="focus-marker">&gt; Current Lab:</span>
+              <span class="focus-note">Thread-safe data structures &amp; custom collection implementations.</span>
+            </div>
+          </article>
+
+          <!-- Area 2: DSA -->
+          <article class="explore-card">
+            <div class="explore-card-top">
+              <div class="explore-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <span class="explore-stage-badge stage-daily">DAILY DRILL</span>
+            </div>
+            <div class="explore-meta">AREA 02 // ALGORITHMIC LOGIC</div>
+            <h3 class="explore-title">Data Structures &amp; Algorithms</h3>
+            <p class="explore-desc">
+              Deconstructing problem patterns to formulate optimal asymptotic solutions. Focusing on graph algorithms, dynamic programming states, trees, and monotonic stacks.
+            </p>
+            <div class="explore-topics">
+              <span class="topic-chip">Graph BFS/DFS</span>
+              <span class="topic-chip">Dynamic Programming</span>
+              <span class="topic-chip">Sliding Window</span>
+              <span class="topic-chip">Trees &amp; Tries</span>
+              <span class="topic-chip">Complexity Proofs</span>
+            </div>
+            <div class="explore-current-focus">
+              <span class="focus-marker">&gt; Current Lab:</span>
+              <span class="focus-note">Graph shortest-path variants &amp; topological sort patterns.</span>
+            </div>
+          </article>
+
+          <!-- Area 3: Cloud Computing -->
+          <article class="explore-card">
+            <div class="explore-card-top">
+              <div class="explore-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <span class="explore-stage-badge stage-active">EXPLORING</span>
+            </div>
+            <div class="explore-meta">AREA 03 // INFRASTRUCTURE &amp; SCALE</div>
+            <h3 class="explore-title">Cloud Computing &amp; DevOps</h3>
+            <p class="explore-desc">
+              Understanding modern distributed cloud primitives: AWS core services (EC2, S3, IAM), containerization basics with Docker, and cloud-native system design principles.
+            </p>
+            <div class="explore-topics">
+              <span class="topic-chip">AWS Core</span>
+              <span class="topic-chip">Docker Basics</span>
+              <span class="topic-chip">Virtualization</span>
+              <span class="topic-chip">Serverless</span>
+              <span class="topic-chip">CI/CD Pipelines</span>
+            </div>
+            <div class="explore-current-focus">
+              <span class="focus-marker">&gt; Current Lab:</span>
+              <span class="focus-note">Containerizing backend services &amp; configuring secure cloud storage.</span>
+            </div>
+          </article>
+
+          <!-- Area 4: Web Development -->
+          <article class="explore-card">
+            <div class="explore-card-top">
+              <div class="explore-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="explore-stage-badge stage-building">BUILDING</span>
+            </div>
+            <div class="explore-meta">AREA 04 // FULL-STACK APIS</div>
+            <h3 class="explore-title">Web Development &amp; Systems</h3>
+            <p class="explore-desc">
+              Crafting fast, accessible client interfaces connected to RESTful backend endpoints. Emphasizing semantic HTML, clean modern CSS architectures, and state consistency.
+            </p>
+            <div class="explore-topics">
+              <span class="topic-chip">REST APIs</span>
+              <span class="topic-chip">Async JS / Fetch</span>
+              <span class="topic-chip">DOM Performance</span>
+              <span class="topic-chip">SQL / DB Integration</span>
+              <span class="topic-chip">Responsive UX</span>
+            </div>
+            <div class="explore-current-focus">
+              <span class="focus-marker">&gt; Current Lab:</span>
+              <span class="focus-note">Building responsive dashboards with real-time API integrations.</span>
+            </div>
+          </article>
+
+          <!-- Area 5: Open Source -->
+          <article class="explore-card card-span-wide">
+            <div class="explore-card-top">
+              <div class="explore-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <span class="explore-stage-badge stage-frontier">NEXT FRONTIER</span>
+            </div>
+            <div class="explore-meta">AREA 05 // COMMUNITY &amp; COLLABORATION</div>
+            <h3 class="explore-title">Open Source Ecosystem</h3>
+            <p class="explore-desc">
+              Developing the skills required for contributing to large, distributed codebases: navigating foreign architectures, reading PR reviews, adhering to contribution guidelines, and writing comprehensive unit tests.
+            </p>
+            <div class="explore-topics">
+              <span class="topic-chip">Git / GitHub Workflows</span>
+              <span class="topic-chip">Issue Triage</span>
+              <span class="topic-chip">Codebase Navigation</span>
+              <span class="topic-chip">Documentation PRs</span>
+              <span class="topic-chip">Java Open Source</span>
+            </div>
+            <div class="explore-current-focus">
+              <span class="focus-marker">&gt; Current Lab:</span>
+              <span class="focus-note">Targeting "good first issue" candidates in Java developer utilities &amp; student open-source programs.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Selected Projects -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">03 //</span> APPLIED ENGINEERING</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            Projects built to test theories, solve real constraints, and translate academic learning into tangible software artifacts.
+          </p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects [4]</button>
+          <button type="button" class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Java &amp; Backend</button>
+          <button type="button" class="filter-btn" data-filter="algorithms" role="tab" aria-selected="false">Algorithms &amp; DSA</button>
+          <button type="button" class="filter-btn" data-filter="database" role="tab" aria-selected="false">Database Systems</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: RFQ Compliance Checker -->
+          <article class="project-card featured" data-category="backend">
+            <div class="project-card-header">
+              <div class="project-flag">
+                <span class="dot-violet"></span>
+                <span>FEATURED ENGINEERING PROJECT</span>
+              </div>
+              <div class="project-version">v0.8.4 // ACTIVE</div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-main-info">
+                <h3 class="project-title">RFQ Compliance Checker</h3>
+                <p class="project-headline">Automated Request for Quotation (RFQ) analysis &amp; specification compliance engine.</p>
+                <p class="project-desc">
+                  An enterprise-oriented tool built to automate the tedious manual verification of vendor proposal documents against rigorous client engineering specifications. Extracts criteria, parses numeric tolerances, calculates automated compliance scores, and flags contractual risks.
+                </p>
+
+                <div class="project-architecture-block">
+                  <div class="arch-label">KEY ARCHITECTURAL HIGHLIGHTS:</div>
+                  <ul class="arch-points">
+                    <li>Rule-based constraint engine parsing structured &amp; unstructured criteria</li>
+                    <li>Discrepancy scoring matrix with multi-factor weighting</li>
+                    <li>Clear audit trail and exportable technical compliance certificates</li>
+                  </ul>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Rule Engine</span>
+                  <span class="tech-tag">REST API</span>
+                </div>
+
+                <div class="project-card-actions">
+                  <button type="button" class="btn-project-link modal-trigger" data-project="rfq">
+                    <span>Inspect Architecture</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link" aria-label="RFQ Checker on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Interactive Mock Visualizer -->
+              <div class="project-visual-pane">
+                <div class="code-terminal-card">
+                  <div class="terminal-header-mini">
+                    <span class="file-name">compliance_evaluator.java</span>
+                    <span class="status-indicator">PASSED: 96.4%</span>
+                  </div>
+                  <pre class="code-snippet"><code><span class="kw">public class</span> <span class="cls">RFQComplianceEngine</span> {
+  <span class="kw">public</span> <span class="cls">ComplianceReport</span> <span class="fn">evaluate</span>(<span class="cls">RFQSpec</span> target, <span class="cls">VendorBid</span> bid) {
+    <span class="cls">Matrix</span> matchScore = <span class="kw">new</span> <span class="cls">RuleEngine</span>()
+      .<span class="fn">verifyTolerances</span>(target.getConstraints())
+      .<span class="fn">validateCertifications</span>(bid.getCerts())
+      .<span class="fn">computeRiskIndex</span>();
+    
+    <span class="kw">return new</span> <span class="cls">ComplianceReport</span>(
+      matchScore.<span class="fn">isSatisfied</span>(),
+      matchScore.<span class="fn">getVarianceDeltas</span>()
+    );
+  }
+}</code></pre>
+                  <div class="spec-match-meter">
+                    <div class="meter-header">
+                      <span>SPEC COMPLIANCE INDEX</span>
+                      <span class="meter-percent">96.4% MATCH</span>
+                    </div>
+                    <div class="meter-bar">
+                      <div class="meter-fill" style="width: 96.4%;"></div>
+                    </div>
+                    <div class="meter-metrics">
+                      <span>• Tolerance: ±0.05mm</span>
+                      <span>• Materials: Verified</span>
+                      <span>• SLA: Compliant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: LeetCode Patterns & Solutions -->
+          <article class="project-card" data-category="algorithms">
+            <div class="project-card-header">
+              <div class="project-flag">
+                <span class="dot-cyan"></span>
+                <span>ALGORITHMIC REPOSITORY</span>
+              </div>
+              <div class="project-version">150+ SOLVED</div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-main-info">
+                <h3 class="project-title">Algorithmic Patterns &amp; LeetCode Lab</h3>
+                <p class="project-headline">Systematic solution repository categorized by underlying mental models.</p>
+                <p class="project-desc">
+                  A curated collection of algorithmic implementations in Java and C++. Rather than collecting random one-offs, problems are categorized by core engineering patterns: Sliding Window, Two Pointers, Monotonic Stack, Interval Trees, and Graph Traversals with rigorous complexity proofs.
+                </p>
+
+                <div class="pattern-chips-row">
+                  <span class="chip-sm">Two Pointers</span>
+                  <span class="chip-sm">Sliding Window</span>
+                  <span class="chip-sm">Graph BFS/DFS</span>
+                  <span class="chip-sm">Monotonic Stack</span>
+                  <span class="chip-sm">0/1 Knapsack DP</span>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">Data Structures</span>
+                  <span class="tech-tag">Complexity Analysis</span>
+                </div>
+
+                <div class="project-card-actions">
+                  <button type="button" class="btn-project-link modal-trigger" data-project="dsa">
+                    <span>View Patterns</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link" aria-label="DSA Repo on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Company Database / SQL Project -->
+          <article class="project-card" data-category="database">
+            <div class="project-card-header">
+              <div class="project-flag">
+                <span class="dot-violet"></span>
+                <span>DATA ARCHITECTURE</span>
+              </div>
+              <div class="project-version">RELATIONAL SCHEMA</div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-main-info">
+                <h3 class="project-title">Company &amp; Operations Database Engine</h3>
+                <p class="project-headline">Normalized 3NF relational schema design, query optimization, and RBAC.</p>
+                <p class="project-desc">
+                  A complete relational database model simulating enterprise human resources, department allocations, client contracts, and payroll transactions. Focuses on entity relationship integrity, query execution plan tuning with composite indexing, and transactional ACID guarantees.
+                </p>
+
+                <div class="pattern-chips-row">
+                  <span class="chip-sm">3NF Normalization</span>
+                  <span class="chip-sm">B-Tree Indexing</span>
+                  <span class="chip-sm">Complex Joins</span>
+                  <span class="chip-sm">ACID Transactions</span>
+                  <span class="chip-sm">RBAC Security</span>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Database Tuning</span>
+                  <span class="tech-tag">Relational Modeling</span>
+                </div>
+
+                <div class="project-card-actions">
+                  <button type="button" class="btn-project-link modal-trigger" data-project="db">
+                    <span>Inspect Schema</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link" aria-label="SQL Project on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>SQL Scripts</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Experimental Lab & Future Works -->
+          <article class="project-card" data-category="backend">
+            <div class="project-card-header">
+              <div class="project-flag">
+                <span class="dot-yellow"></span>
+                <span>LAB EXPERIMENTS</span>
+              </div>
+              <div class="project-version">PROTOTYPING</div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-main-info">
+                <h3 class="project-title">Systems Sandbox &amp; Micro-Utilities</h3>
+                <p class="project-headline">CLI task utilities, network packet observers, and concurrency benchmarks.</p>
+                <p class="project-desc">
+                  An active engineering testbed where I prototype utility scripts, investigate concurrent synchronization primitives (Semaphores, ReentrantLocks), benchmark sorting mechanisms, and experiment with lightweight HTTP servers from scratch.
+                </p>
+
+                <div class="pattern-chips-row">
+                  <span class="chip-sm">CLI Development</span>
+                  <span class="chip-sm">Lock Benchmarks</span>
+                  <span class="chip-sm">Custom Sockets</span>
+                  <span class="chip-sm">File I/O Optimization</span>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">Shell Scripting</span>
+                  <span class="tech-tag">Git</span>
+                </div>
+
+                <div class="project-card-actions">
+                  <button type="button" class="btn-project-link modal-trigger" data-project="lab">
+                    <span>Inspect Experiments</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link" aria-label="Lab Repo on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>Lab Notes</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Learning Journey (The Progression Pipeline) -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">04 //</span> THE EVOLUTION</span>
+          <h2 class="section-title">The Learning Progression</h2>
+          <p class="section-subtitle">
+            An intentional roadmap of capability growth — moving from low-level computing memory to enterprise architecture and open source contribution.
+          </p>
+        </div>
+
+        <!-- The Pipeline Stepper / Visual Progression -->
+        <div class="progression-pipeline">
+          <!-- Step 1: C/C++ -->
+          <div class="pipeline-step completed">
+            <div class="step-marker">
+              <div class="marker-circle">
+                <span class="marker-check">✓</span>
+              </div>
+              <div class="marker-connector"></div>
+            </div>
+            <div class="step-card">
+              <div class="step-meta">
+                <span class="step-index">PHASE 01</span>
+                <span class="step-status status-solidified">FOUNDATION SOLIDIFIED</span>
+              </div>
+              <h3 class="step-title">C &amp; C++ Computing Foundations</h3>
+              <p class="step-desc">
+                Learned foundational computing mechanics: manual pointer arithmetic, heap vs stack memory allocation, algorithmic complexity, structs, and bitwise manipulation.
+              </p>
+              <div class="step-key-takeaways">
+                <span class="takeaway-label">Key Takeaway:</span>
+                <span class="takeaway-text">Deep appreciation for what abstractions hide and how machines actually process instructions.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Web Dev -->
+          <div class="pipeline-step completed">
+            <div class="step-marker">
+              <div class="marker-circle">
+                <span class="marker-check">✓</span>
+              </div>
+              <div class="marker-connector"></div>
+            </div>
+            <div class="step-card">
+              <div class="step-meta">
+                <span class="step-index">PHASE 02</span>
+                <span class="step-status status-solidified">FOUNDATION SOLIDIFIED</span>
+              </div>
+              <h3 class="step-title">Web Development &amp; Client-Server Systems</h3>
+              <p class="step-desc">
+                Explored how systems communicate across the internet: HTTP verbs, REST API contracts, JSON serialization, asynchronous JavaScript, and structured DOM rendering.
+              </p>
+              <div class="step-key-takeaways">
+                <span class="takeaway-label">Key Takeaway:</span>
+                <span class="takeaway-text">Software is only as good as its interface and reliable data delivery guarantees.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Java & OOP -->
+          <div class="pipeline-step active">
+            <div class="step-marker">
+              <div class="marker-circle">
+                <span class="marker-pulse"></span>
+              </div>
+              <div class="marker-connector"></div>
+            </div>
+            <div class="step-card step-current">
+              <div class="step-meta">
+                <span class="step-index">PHASE 03</span>
+                <span class="step-status status-active">ACTIVE FOCUS // ACCELERATING</span>
+              </div>
+              <h3 class="step-title">Java &amp; Object-Oriented Architecture</h3>
+              <p class="step-desc">
+                Transitioned to strict-typed enterprise design: abstraction, polymorphism, design patterns (Factory, Observer, Strategy), multithreading, and Spring ecosystem foundations.
+              </p>
+              <div class="step-key-takeaways">
+                <span class="takeaway-label">Current Milestone:</span>
+                <span class="takeaway-text">Developing the RFQ Compliance Engine and mastering thread-safe concurrency models.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: DSA -->
+          <div class="pipeline-step active">
+            <div class="step-marker">
+              <div class="marker-circle">
+                <span class="marker-pulse"></span>
+              </div>
+              <div class="marker-connector"></div>
+            </div>
+            <div class="step-card step-current">
+              <div class="step-meta">
+                <span class="step-index">PHASE 04</span>
+                <span class="step-status status-active">ACTIVE FOCUS // DAILY PRACTICE</span>
+              </div>
+              <h3 class="step-title">Data Structures &amp; Algorithmic Rigor</h3>
+              <p class="step-desc">
+                Daily problem solving to build intuitive pattern recognition: Graph theory, Dynamic Programming, Binary Search on Answer, Trees, and Trie implementations.
+              </p>
+              <div class="step-key-takeaways">
+                <span class="takeaway-label">Current Milestone:</span>
+                <span class="takeaway-text">Consistent LeetCode problem solving with time/space complexity optimization.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Open Source -->
+          <div class="pipeline-step upcoming">
+            <div class="step-marker">
+              <div class="marker-circle">
+                <span class="marker-target">◎</span>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-meta">
+                <span class="step-index">PHASE 05</span>
+                <span class="step-status status-next">UPCOMING TARGET // HORIZON</span>
+              </div>
+              <h3 class="step-title">Open Source Collaboration &amp; Production Systems</h3>
+              <p class="step-desc">
+                Moving from solo academic code to contributing upstream: reading large production repositories, submitting PRs, participating in issue discussions, and mastering CI/CD workflows.
+              </p>
+              <div class="step-key-takeaways">
+                <span class="takeaway-label">Target Milestone:</span>
+                <span class="takeaway-text">Submitting first merged PR to a notable open-source Java or developer tooling project.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress philosophy callout -->
+        <div class="progression-callout">
+          <div class="callout-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <div class="callout-content">
+            <h4 class="callout-title">The Engineering Philosophy: Consistency over Hype</h4>
+            <p class="callout-text">
+              "No arbitrary percentage bars claiming 99% expertise. Just an authentic, daily commitment to deliberate practice, understanding the fundamentals, and advancing one tier higher every single week."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: Currently (Now) -->
+    <section class="section now-section" id="now">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">05 //</span> LIVE RADAR</span>
+          <h2 class="section-title">Currently</h2>
+          <p class="section-subtitle">
+            A dynamic snapshot of what I am actively reading, building, practicing, and reflecting upon this month.
+          </p>
+        </div>
+
+        <div class="now-grid">
+          <!-- Card 1: Building -->
+          <div class="now-card">
+            <div class="now-card-header">
+              <span class="now-icon-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </span>
+              <span class="now-category">ACTIVELY BUILDING</span>
+            </div>
+            <h3 class="now-title">RFQ Compliance Rule Processor</h3>
+            <p class="now-body">
+              Refining the tolerance-matching parser to handle non-standard measurement units and output structured JSON audit reports.
+            </p>
+            <div class="now-footer-meta">
+              <span class="status-pulse-dot"></span>
+              <span>Commit frequency: 3-4 days/week</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Learning -->
+          <div class="now-card">
+            <div class="now-card-header">
+              <span class="now-icon-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <span class="now-category">DEEP DIVE READING</span>
+            </div>
+            <h3 class="now-title">Java Concurrency &amp; Systems</h3>
+            <p class="now-body">
+              Studying Goetz's <em>Java Concurrency in Practice</em> alongside fundamentals of distributed systems and data consistency models.
+            </p>
+            <div class="now-footer-meta">
+              <span class="dot-violet"></span>
+              <span>Focus: Thread safety &amp; race conditions</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Practicing -->
+          <div class="now-card">
+            <div class="now-card-header">
+              <span class="now-icon-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </span>
+              <span class="now-category">DAILY DRILL</span>
+            </div>
+            <h3 class="now-title">Graph Theory &amp; DP Patterns</h3>
+            <p class="now-body">
+              Tackling 2 LeetCode problems every morning before classes. Currently cataloging patterns in Topological Sorting and Bellman-Ford variants.
+            </p>
+            <div class="now-footer-meta">
+              <span class="dot-cyan"></span>
+              <span>Target: 200+ vetted patterns</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Next Target -->
+          <div class="now-card">
+            <div class="now-card-header">
+              <span class="now-icon-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </span>
+              <span class="now-category">NEXT HORIZON</span>
+            </div>
+            <h3 class="now-title">First Open Source PR</h3>
+            <p class="now-body">
+              Shortlisting open source Java dev tools and libraries to contribute bug fixes, documentation improvements, and unit test coverage.
+            </p>
+            <div class="now-footer-meta">
+              <span class="dot-yellow"></span>
+              <span>Scouting repositories on GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 06: Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-code">06 //</span> TRANSMISSION</span>
+          <h2 class="section-title">Let's Connect &amp; Build</h2>
+          <p class="section-subtitle">
+            Whether you have questions about my projects, want to discuss software engineering, or are looking for a dedicated student intern — my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-card-container">
+          <div class="contact-grid">
+            <!-- Left Contact Info -->
+            <div class="contact-info-side">
+              <div class="contact-meta-badge">
+                <span class="status-pulse-dot"></span>
+                <span>OPEN TO INTERNSHIP OPPORTUNITIES</span>
+              </div>
+
+              <h3 class="contact-prompt">Ready to build something meaningful together.</h3>
+              <p class="contact-text">
+                I am actively seeking software engineering internships where I can contribute to real production code, learn from experienced senior engineers, and tackle challenging technical problems.
+              </p>
+
+              <!-- Quick Action Box -->
+              <div class="email-action-box">
+                <div class="email-label">DIRECT EMAIL ADDRESS</div>
+                <div class="email-copy-row">
+                  <span class="email-address-text" id="targetEmailAddress">keertana.dev@outlook.com</span>
+                  <button type="button" class="btn-copy-interactive" id="btnCopyEmailAction" title="Copy to clipboard">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span id="copyBtnText">Copy Email</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="contact-social-grid">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+                  <div class="social-card-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </div>
+                  <div class="social-card-text">
+                    <span class="social-name">GitHub</span>
+                    <span class="social-handle">@keertana-d</span>
+                  </div>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+                  <div class="social-card-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                  </div>
+                  <div class="social-card-text">
+                    <span class="social-name">LinkedIn</span>
+                    <span class="social-handle">in/keertana-d</span>
+                  </div>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-side">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-header-bar">
+                  <span class="dot dot-close"></span>
+                  <span class="dot dot-minimize"></span>
+                  <span class="dot dot-expand"></span>
+                  <span class="form-title-bar">compose_message.sh</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderName" class="form-label">YOUR NAME</label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Rivera" required>
+                  <span class="form-error" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">EMAIL ADDRESS</label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                  <span class="form-error" id="emailError">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageSubject" class="form-label">SUBJECT / TOPIC</label>
+                  <input type="text" id="messageSubject" name="subject" class="form-input" placeholder="e.g. SDE Internship Opportunity / Project Collaboration">
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">MESSAGE</label>
+                  <textarea id="senderMessage" name="message" class="form-textarea" rows="4" placeholder="Hello Keertana, I came across your portfolio..." required></textarea>
+                  <span class="form-error" id="messageError">Please enter a message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit-message" id="submitBtn">
+                  <span id="btnSubmitText">Transmit Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">ARCHITECTURE_INSPECT</span>
+          <h3 class="modal-title" id="modalProjectTitle">Project Details</h3>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalProjectBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-btn" id="modalCloseAction">Close</button>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalGithubLink">
+          <span>View on GitHub</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-code">&lt;kd /&gt;</span>
+          <span class="footer-brand-name">D Keertana</span>
+          <span class="footer-brand-role">Computer Science Engineering</span>
+        </div>
+
+        <div class="footer-telemetry">
+          <div class="telemetry-pill">
+            <span class="status-pulse-dot"></span>
+            <span>SYSTEM_ONLINE // UTC+05:30</span>
+          </div>
+          <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to top">
+            <span>TOP</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 D Keertana. Built with intentional engineering aesthetics, vanilla CSS, and clean code.
+        </p>
+        <p class="footer-quote">
+          "Building while learning — one commit, one algorithm, one problem at a time."
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
